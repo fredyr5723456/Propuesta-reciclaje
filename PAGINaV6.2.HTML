@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dale otra vida a tu botella</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin: 0; padding: 0; background-color: #fff8e1; color: #1b3e66; }
+        header { 
+            background-color: #ffc72c; 
+            color: #1b3e66; 
+            padding: 20px; 
+            font-size: 24px; 
+            font-weight: bold; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; /* Centra el contenido horizontalmente */
+            gap: 20px; /* Espacio entre el logo y el texto */
+        }
+        .header-left img { 
+            height: 50px; 
+            width: auto; 
+        }
+        section { padding: 20px; }
+        .video-container { margin: 20px auto; max-width: 600px; }
+        .counter { font-size: 20px; margin-top: 10px; }
+        button { padding: 10px; margin: 10px; background-color: #1b3e66; color: white; border: none; cursor: pointer; }
+        button:hover { background-color: #144d79; }
+        .image-container img { max-width: 100%; height: auto; margin: 10px 0; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <img src="https://i.imgur.com/P82Xw8T.png" alt="Logo GRUPO MODELO">
+        </div>
+        <div>
+            Dale otra vida a tu botella 🍻🌱
+        </div>
+    </header>
+    
+    <section>
+        <h2>¿Por qué es importante?</h2>
+        <p>Las botellas limpias pueden reciclarse y reutilizarse, pero si están sucias, terminan en la basura.</p>
+        <div class="video-container">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="image-container">
+            <img src="https://i.imgur.com/5ZugSbu.png" alt="Reciclaje de botellas">
+        </div>
+    </section>
+    
+    <section>
+        <h2>Lo que debes y no debes hacer</h2>
+        <ul>
+            <li>✅ Enjuaga la botella después de usarla.</li>
+            <li>✅ Recíclala en el contenedor correcto.</li>
+            <li>❌ No introduzcas colillas de cigarro, semillas de limón, servilletas, chicles u otros cuerpos extraños.</li>
+            <li>❌ No exprimas limón dentro, ya que daña el vidrio.</li>
+            <li>❌ No dejes restos de líquidos en la botella.</li>
+            <li>❌ No mezcles residuos orgánicos con la botella de vidrio.</li>
+        </ul>
+        <div class="image-container">
+            <img src="https://i.imgur.com/Es7lBbe.png" alt="Ejemplo de botellas mal recicladas">
+        </div>
+    </section>
+    
+    <section>
+        <h2>¡Tú puedes hacer la diferencia!</h2>
+        <p>Gracias a personas como tú, ya hemos evitado que <span id="counter">0</span> botellas terminen en la basura.</p>
+        <button onclick="incrementCounter()">Yo también ayudaré 🍻</button>
+        <div class="image-container">
+            <img src="https://i.imgur.com/igislKV.png" alt="Botellas bien recicladas">
+        </div>
+    </section>
+    
+    <section>
+        <h2>¿Listo para un reto?</h2>
+        <p>Responde esta pregunta y participa en un sorteo:</p>
+        <p><strong>¿Por qué es importante no ensuciar o meter cuerpos extraños a las botellas de vidrio?</strong></p>
+        <button onclick="alert('¡Correcto! Los cuerpos extraños contaminan el vidrio y dificultan su reciclaje, reduciendo su reutilización. 🍃')">Porque contaminan el vidrio y dificultan su reciclaje</button>
+        <button onclick="alert('¡Incorrecto! Ensuciar la botella afecta su posibilidad de ser reciclada. ❌')">Porque el reciclaje separa todo automáticamente</button>
+    </section>
+    
+    <script>
+        let count = 0;
+        function incrementCounter() {
+            count++;
+            document.getElementById('counter').innerText = count;
+        }
+    </script>
+</body>
+</html>
